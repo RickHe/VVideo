@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="findAnchorCell" id="gTV-IL-0wX" customClass="RHFindAnchorCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="336"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="313" height="336"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Kf8-Qb-uxR">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="336"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Kf8-Qb-uxR" secondAttribute="bottom" id="9I1-Pg-frv"/>
+                <constraint firstItem="Kf8-Qb-uxR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Asg-l4-k1g"/>
+                <constraint firstItem="Kf8-Qb-uxR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fAa-2W-x9I"/>
+                <constraint firstAttribute="trailing" secondItem="Kf8-Qb-uxR" secondAttribute="trailing" id="rpa-0U-Fvp"/>
+            </constraints>
+            <size key="customSize" width="313" height="336"/>
+            <connections>
+                <outlet property="backgrounImageView" destination="Kf8-Qb-uxR" id="Q4G-0P-Kes"/>
+            </connections>
+            <point key="canvasLocation" x="201.5" y="224"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1.jpg" width="610" height="908"/>
+    </resources>
+</document>
